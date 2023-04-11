@@ -1,6 +1,10 @@
 # Fridgeteria website 
 This is basically a customized refrigerator based on JQuery, JS, HTML and CSS which gives recipe suggestions according to the ingredients added to refrigerator.
 
+## INSTALLATION
+- Clone the repository into your local folder.
+- Run index.html in browser.
+
 ## Features:
 1. You need to submit user details before entering, like your name and the name you want to call your fridge with (just for fun).
 2. After successful validation of your form, click continue and it will take you to the first page.
