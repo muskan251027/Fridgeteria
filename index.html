@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linked css file -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- linked js file -->
+    <script src="index.js"></script>
+    <!-- link to use font awesome icons -->
+    <script src="https://kit.fontawesome.com/0e604444e3.js" crossorigin="anonymous"></script>
+    <title>FRIDGETERIA - Your Own Personalized Refrigerator</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>fridgeteria</h1>
+        <h4>Your Own Personalized Refrigerator</h4>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Form div ---------------------- First to be displayed -->
+        <div class="mainForm" id="detailsForm">
+            <h2>Welcome to Fridgeteria!!</h2>
+            <h5>Please fill this form to continue.</h5>
+            <div class="formDets">
+                <form name="userDetsForm" action="/" method="POST">
+                    <div class="userInfo">
+                        <label for="userName">Your Name:</label>
+                        <input type="text" name="userName" id="userName"/>
+                    </div>
+                    <div class="fridgeInfo">
+                        <label for="fridgeName">Fridge Name:</label>
+                        <input type="text" name="fridgeName" id="fridgeName"/>
+                    </div>
+                    <input type="submit" value="Continue" class="submitDets" />
+                </form>
+            </div>
+        </div>
+        
+        <!-- ingredients list displaying div ---------------------- Second to be displayed -->
+        <div class="firstPage" id="firstPageShow">
+            <div class="head">
+                <h2>Hi! <span id="userNameFromForm"></span>. Let's start adding ingredients to your <span id="fridgeNameFromForm"></span><i class="fa-solid fa-list-check"></i></h2>
+                <button class="addButton workButton" id="showFinalList">Proceed to recipes <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="ingredientsBox" id="foodSelection"></div>
+        </div>
+
+        <!-- final selected ingredients div ---------------------- Third to be displayed -->
+        <div class="secondPage" id="secondPageShow">
+            <div class="head">
+                <button class="editButton workButton" id="editList"><i class="fa-regular fa-hand-point-left"></i> Edit List</button>
+                <button class="suggestButton workButton" id="showSuggestions">Suggest Recipes <i class="fa-solid fa-wand-magic-sparkles"></i></button>
+            </div>
+            <div class="selectedIngrdientsList" id="displaySelection">
+                
+            </div>
+        </div>
+
+        <!-- recipies displaying div ---------------------- Fourth to be displayed -->
+        <div class="thirdPage" id="thirdPageShow">
+            <div class="containerThird">
+                <div class="sidebar">
+                    <button class="backButton workButton" id="pressBack"><i class="fa-regular fa-hand-point-left"></i> Go Back</button>
+                    <div class="radioButtons">
+                        <div class="seperatebutton">
+                            <input class="radioButt" type="radio" name="food_type" id="all" value="All" checked>
+                            <label for="all">All</label>
+                        </div>
+                        <div class="seperatebutton">
+                            <input class="radioButt" type="radio" name="food_type" id="food" value="Food">
+                            <label for="food">Food</label>
+                        </div>
+                        <div class="seperatebutton">
+                            <input class="radioButt" type="radio" name="food_type" id="beverage" value="Beverages">
+                            <label for="beverage">Beverages</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainRecipeArea">
+                    <div class="noRecipe" id="noRecipeContent">Sorry!! No Suggestions available!!</div>
+                    <div class="recipeList" id="recipeContent"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy;Copyright Muskan Aggarwal, 2022
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+/* font used - poppins */
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&family=Kolker+Brush&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Default settings */
+html {
+    box-sizing: border-box;
+    font: 16px "Poppins"; 
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body > * {
+    flex-shrink: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+button {
+    font: 16px "Poppins"; 
+}
+
+/* CSS for header */
+header {
+    text-align: center;
+    background: #7ebab4;
+    padding: 15px 0;
+}
+header h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #0a272b;
+    letter-spacing: 5px;
+}
+header h4 {
+    font-style: italic;
+    color: #7f3333;
+}
+
+/* CSS for main */
+main {
+    padding: 25px;
+    background: #f3fffd;
+    flex-grow: 1;
+}
+
+/* CSS for Form Section */
+.mainForm {
+    text-align: center;
+}
+.mainForm .formDets {
+    width: 30%;
+    margin: auto;
+    box-shadow: inset 0 0 8px #7ebab4;
+    border-radius: 10px;
+    padding: 25px 0px;
+    margin-top: 20px;
+}
+.formDets label {
+    margin-right: 10px;
+}
+.formDets input {
+    border: none;
+    box-shadow: inset 0 0 8px #7ebab4;
+    border-radius: 4px;
+    width: 45%;
+    padding: 10px 5px;
+    font-family: "Poppins";
+}
+.fridgeInfo {
+    margin-top: 30px;
+}
+.submitDets {
+    margin-top: 45px;
+    box-shadow: none !important;
+    background: #7f3333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main h2 i {
+    margin-left: 10px;
+}
+
+.firstPage {
+    display: none;
+}
+.firstPage .head {
+    display: flex;
+    justify-content: space-between;
+}
+/* css for dropdowns of ingredients */
+.ingredientsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.categoryBox h3 {
+    color: #165860;
+    font-weight: 400;
+}
+.categoryBox button {
+    background: #f3fffd;
+    border: none;
+    padding: 7px 25px;
+    box-shadow: 1px 2px 5px #165860;
+    margin-top: 8px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.categoryBox button i {
+    pointer-events: none;
+}
+.categoryBox ul {
+    margin: 0;
+    list-style: none;
+    background: #7ebab4;
+    padding: 0px 10px;
+    box-shadow: 1px 2px 7px black;
+    display: none;
+    /* position: absolute;
+    width: 140px; */
+    max-height: 250px;
+    overflow-y: auto;
+}
+.categoryBox ul li {
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+    color: #0a272b;
+    cursor: pointer;
+}
+.categoryBox ul li i {
+    margin-left: 5px;
+    display: none;
+    pointer-events: none;
+}
+.categoryBox ul li:last-child {
+    border: none;
+}
+
+/* css for selected list items */
+.secondPage {
+    display: none;
+}
+.selectedIngrdientsList {
+    margin-top: 20px;
+}
+.selectedIngrdientsList .listItem {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+.selectedIngrdientsList .listItem .listItemHead {
+    flex-shrink: 0;
+    color: #165860;
+}
+.selectedIngrdientsList .listItem .displaySelectedItems {
+    flex-grow: 1;
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    border: 1px solid #7ebab4;
+    border-radius: 5px;
+    padding: 5px 5px;
+    box-shadow: inset 0 0 8px #7ebab4;
+}
+.selectedIngrdientsList .listItem .displaySelectedItems .item {
+    background: #7f3333;
+    color: white;
+    padding: 0px 5px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+.secondPage .head {
+    display: flex;
+    justify-content: space-between;
+}
+.workButton {
+    background: #7f3333;
+    color: white;
+    padding: 3px 50px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+/* CSS for recipe list page */
+.thirdPage {
+    display: none;
+}
+.thirdPage .containerThird {
+    display: flex;
+    column-gap: 100px;
+}
+.mainRecipeArea {
+    flex-grow: 1;
+}
+.radioButtons {
+    margin-top: 50px;
+    font-weight: 600;
+}
+.noRecipe {
+    display: none;
+    font-size: 35px;
+}
+.indRecipe h3 {
+    color: #0a272b;
+}
+
+
+/* --------------------- Some extra CSS classes ---------------------- */
+
+/* after selecting item from list, change CSS for selected items */
+.afterSelection {
+    font-weight: 700;
+}
+.displayTick {
+    display: inline !important;
+}
+/* toggle class for food lists */
+.displayList {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+
+/* CSS for footer */
+footer {
+    background: #0a272b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
