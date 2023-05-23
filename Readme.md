@@ -1,5 +1,6 @@
 # Fridgeteria website 
 This is basically a customized refrigerator based on JQuery, JS, HTML and CSS which gives recipe suggestions according to the ingredients added to refrigerator.
+URL - https://fridgeteria.netlify.app/
 
 ## INSTALLATION
 - Clone the repository into your local folder.
